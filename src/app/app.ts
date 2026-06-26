@@ -1,9 +1,10 @@
 import { Component, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { DecimalInputDirective } from './core/decimal-input.directive';
 
 @Component({
   selector: 'app-root',
-  imports: [FormsModule],
+  imports: [FormsModule, DecimalInputDirective],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

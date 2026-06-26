@@ -10,35 +10,36 @@
       <div class="input-grid">
         <div class="input-wrapper">
           <label for="pt1">PT1 (Teórica)</label>
-          <input type="number" id="pt1" min="0" max="10" placeholder="0.0" [(ngModel)]="pt1">
+          <input type="text" inputmode="decimal" appDecimal id="pt1" placeholder="0.0" [(ngModel)]="pt1">
         </div>
         <div class="input-wrapper">
           <label for="pt2">PT2 (Teórica)</label>
-          <input type="number" id="pt2" min="0" max="10" placeholder="0.0" [(ngModel)]="pt2">
+          <input type="text" inputmode="decimal" appDecimal id="pt2" placeholder="0.0" [(ngModel)]="pt2">
         </div>
 
         <div class="input-wrapper">
           <label for="pi1">PI1 (Prática)</label>
-          <input type="number" id="pi1" min="0" max="10" placeholder="0.0" [(ngModel)]="pi1">
+          <input type="text" inputmode="decimal" appDecimal id="pi1" placeholder="0.0" [(ngModel)]="pi1">
         </div>
         <div class="input-wrapper">
           <label for="pi2">PI2 (Prática)</label>
-          <input type="number" id="pi2" min="0" max="10" placeholder="0.0" [(ngModel)]="pi2">
+          <input type="text" inputmode="decimal" appDecimal id="pi2" placeholder="0.0" [(ngModel)]="pi2">
         </div>
 
         <div class="input-wrapper">
           <label for="nci">NCI (Clínica)</label>
-          <input type="number" id="nci" min="0" max="10" placeholder="0.0" [(ngModel)]="nci">
+          <input type="text" inputmode="decimal" appDecimal id="nci" placeholder="0.0" [(ngModel)]="nci">
         </div>
         <div class="input-wrapper">
           <label for="npaeg">NPAEG (Extensão)</label>
-          <input type="number" id="npaeg" min="0" max="10" placeholder="0.0" [(ngModel)]="npaeg">
+          <input type="text" inputmode="decimal" appDecimal id="npaeg" placeholder="0.0" [(ngModel)]="npaeg">
         </div>
       </div>
 
       <div class="input-wrapper extra-point-container">
         <label for="extra">Ponto Extra (Máx 0,5)</label>
-        <input type="number" id="extra" min="0" max="0.5" step="0.1" placeholder="0.0" [(ngModel)]="pontoExtra">
+        <input type="text" inputmode="decimal" appDecimal id="extra" [maxLimit]="0.5" placeholder="0.0"
+          [(ngModel)]="pontoExtra">
       </div>
     </div>
 
